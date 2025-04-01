@@ -9,10 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">
-            <img src="logo.png" alt="Jonica Construction Logo" width="50" height="50" class="d-inline-block align-top">
-            Jonica Construction
-        </a>
+        <a class="navbar-brand" href="index.html">Jonica Construction</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Fandraisana</a></li>
@@ -22,19 +19,30 @@
     </nav>
     <main class="container">
         <h1>Dashboard Admin</h1>
-        <form>
-            <div class="form-group">
-                <label for="username">Anaran'ny mpampiasa</label>
-                <input type="text" class="form-control" id="username">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#users">Fitantanana mpampiasa</a></li>
+                    <li class="list-group-item"><a href="#posts">Fitantanana lahatsoratra</a></li>
+                    <li class="list-group-item"><a href="#messages">Fitantanana hafatra</a></li>
+                    <li class="list-group-item"><a href="#tasks">Fitantanana asa</a></li>
+                </ul>
             </div>
-            <div class="form-group">
-                <label for="password">Tenimiafina</label>
-                <input type="password" class="form-control" id="password">
+            <div class="col-md-9">
+                <div id="users">
+                    <h2>Fitantanana mpampiasa</h2>
+                    </div>
+                <div id="posts">
+                    <h2>Fitantanana lahatsoratra</h2>
+                    </div>
+                <div id="messages">
+                    <h2>Fitantanana hafatra</h2>
+                    </div>
+                <div id="tasks">
+                    <h2>Fitantanana asa</h2>
+                    </div>
             </div>
-            <button type="submit" class="btn btn-primary">Miditra</button>
-        </form>
-        <p>Afaka mamoaka lahatsoratra ianao eto</p>
-        <p>Afaka manampy mpampiasa vaovao ianao eto</p>
+        </div>
     </main>
     <footer class="text-center"><p>Copyright © 2023 Jonica Construction</p></footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
