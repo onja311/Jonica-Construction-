@@ -8,36 +8,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">
-            <img src="logo.png" alt="Jonica Construction Logo" width="50" height="50" class="d-inline-block align-top">
-            Jonica Construction
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="index.html">Fandraisana</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">Momba anay</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Serivisy</a></li>
-                <li class="nav-item"><a class="nav-link" href="jobs.html">Asa</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Fidirana</a></li>
-            </ul>
-        </div>
-    </nav>
-    <header class="jumbotron text-center">
-        <h1>Tongasoa eto amin'ny Jonica Construction</h1>
-        <p>Manome serivisy fanorenana avo lenta izahay.</p>
-        <a href="#" class="btn btn-primary">Hifandraisa aminay</a>
-    </header>
-    <main class="container">
-        <section class="row">
-            <div class="col-md-4"><h2>Serivisy 1</h2><p>Fanazavana momba ny serivisy 1.</p></div>
-            <div class="col-md-4"><h2>Serivisy 2</h2><p>Fanazavana momba ny serivisy 2.</p></div>
-            <div class="col-md-4"><h2>Serivisy 3</h2><p>Fanazavana momba ny serivisy 3.</p></div>
-        </section>
-    </main>
-    <footer class="text-center"><p>Copyright © 2023 Jonica Construction</p></footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div id="loading-dots" class="loading-dots">
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+    </div>
+    <div id="content" style="display: none;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Jonica Construction</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Fandraisana</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Momba anay</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Serivisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jobs.html">Asa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Fidirana</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header class="jumbotron text-center">
+            <h1>Tongasoa eto amin'ny Jonica Construction</h1>
+            <p>Manome serivisy fanorenana avo lenta izahay.</p>
+            <a href="#" class="btn btn-primary">Hifandraisa aminay</a>
+        </header>
+        <main class="container">
+            <section class="row">
+                <div class="col-md-4"><h2>Serivisy 1</h2><p>Fanazavana momba ny serivisy 1.</p></div>
+                <div class="col-md-4"><h2>Serivisy 2</h2><p>Fanazavana momba ny serivisy 2.</p></div>
+                <div class="col-md-4"><h2>Serivisy 3</h2><p>Fanazavana momba ny serivisy 3.</p></div>
+            </section>
+        </main>
+        <footer class="text-center"><p>Copyright © 2023 Jonica Construction</p></footer>
+    </div>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('loading-dots').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 2000); // 2 segondra
+        };
+    </script>
 </body>
 </html>
