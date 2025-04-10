@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Accueil - Administration Jonica Construction</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="logo">
+                <a href="/admin/dashboard">Jonica Construction (Admin)</a>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="/admin/dashboard">Tableau de Bord</a></li>
+                    <li class="active"><a href="/admin/contenu">Contenu</a></li>
+                    <li><a href="/admin/abonnements">Abonnements</a></li>
+                    <li><a href="/admin/utilisateurs">Utilisateurs</a></li>
+                    <li><a href="/admin/messages">Messages</a></li>
+                    <li><a href="/admin/finance">Finance</a></li>
+                    <li><a href="/admin/logout">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="admin-main">
+            <h1>Gestion du Contenu - Accueil</h1>
+
+            <form class="content-form">
+                <section class="form-section">
+                    <h2>Section Présentation</h2>
+                    <div class="form-group">
+                        <label for="presentation_titre">Titre :</label>
+                        <input type="text" id="presentation_titre" name="presentation_titre" value="Bienvenue chez Jonica Construction">
+                    </div>
+                    <div class="form-group">
+                        <label for="presentation_texte">Texte de présentation :</label>
+                        <textarea id="presentation_texte" name="presentation_texte" rows="5">Votre partenaire de confiance pour tous vos projets de construction.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="presentation_bouton_texte">Texte du bouton :</label>
+                        <input type="text" id="presentation_bouton_texte" name="presentation_bouton_texte" value="Contactez-nous pour un devis">
+                    </div>
+                    <div class="form-group">
+                        <label for="presentation_bouton_lien">Lien du bouton :</label>
+                        <input type="text" id="presentation_bouton_lien" name="presentation_bouton_lien" value="/contact">
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2>Section Entreprises Abonnées</h2>
+                    <p>Ici, vous pouvez gérer l'affichage des entreprises abonnées sur la page d'accueil.</p>
+                    <p><a href="/admin/abonnements/liste">Gérer la liste complète des abonnés</a></p>
+                    <div class="form-group">
+                        <label for="afficher_abonnees">Afficher la section :</label>
+                        <input type="checkbox" id="afficher_abonnees" name="afficher_abonnees" checked>
+                    </div>
+                    <p>Vous pourrez gérer les entreprises à afficher spécifiquement sur l'accueil depuis la <a href="/admin/abonnements/liste">liste des abonnés</a>.</p>
+                </section>
+
+                <section class="form-section">
+                    <h2>Section Projets Phares</h2>
+                    <p>Ici, vous pouvez gérer l'affichage des projets phares sur la page d'accueil.</p>
+                    <p><a href="/admin/contenu/projets">Gérer tous les projets</a></p>
+                    <div class="form-group">
+                        <label for="afficher_projets_phares">Afficher la section :</label>
+                        <input type="checkbox" id="afficher_projets_phares" name="afficher_projets_phares" checked>
+                    </div>
+                    <p>Vous pourrez marquer les projets comme "phares" depuis la page de <a href="/admin/contenu/projets">gestion des projets</a>.</p>
+                </section>
+
+                <section class="form-section">
+                    <h2>Section Notre Équipe</h2>
+                    <div class="form-group">
+                        <label for="equipe_titre">Titre :</label>
+                        <input type="text" id="equipe_titre" name="equipe_titre" value="Notre Équipe">
+                    </div>
+                    <div class="form-group">
+                        <label for="equipe_texte">Texte d'introduction :</label>
+                        <textarea id="equipe_texte" name="equipe_texte" rows="3">Une équipe de professionnels qualifiés à votre service.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="afficher_equipe">Afficher la section :</label>
+                        <input type="checkbox" id="afficher_equipe" name="afficher_equipe" checked>
+                    </div>
+                    <p><a href="/admin/contenu/equipe">Gérer les membres de l'équipe</a></p>
+                </section>
+
+                <section class="form-section">
+                    <h2>Section Appel à l'Action</h2>
+                    <div class="form-group">
+                        <label for="appel_titre">Titre :</label>
+                        <input type="text" id="appel_titre" name="appel_titre" value="Prêt à démarrer votre projet ?">
+                    </div>
+                    <div class="form-group">
+                        <label for="appel_texte">Texte :</label>
+                        <textarea id="appel_texte" name="appel_texte" rows="3">Contactez-nous dès aujourd'hui pour discuter de vos besoins.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="appel_bouton_texte">Texte du bouton :</label>
+                        <input type="text" id="appel_bouton_texte" name="appel_bouton_texte" value="Demander un devis">
+                    </div>
+                    <div class="form-group">
+                        <label for="appel_bouton_lien">Lien du bouton :</label>
+                        <input type="text" id="appel_bouton_lien" name="appel_bouton_lien" value="/contact">
+                    </div>
+                </section>
+
+                <button type="submit" class="button">Enregistrer les modifications</button>
+            </form>
+        </main>
+
+        <footer class="admin-footer">
+            <p>&copy; 2025 Jonica Construction. Administration.</p>
+        </footer>
+    </div>
+</body>
+</html>
