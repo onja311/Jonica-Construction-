@@ -515,3 +515,202 @@ footer {
         grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
     }
 }
+/* style.css (suite) */
+
+/* Styles pour la section "Liste des projets" sur la page Projets */
+.liste-projets-page {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2em;
+}
+
+.projet-detail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projet-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.projet-detail h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.projet-detail .localisation {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+.projet-detail p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.95em;
+}
+
+/* Responsive Design pour la liste des projets (écrans plus petits) */
+@media (max-width: 768px) {
+    .liste-projets-page {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+}
+/* style.css (suite) */
+
+/* Styles pour la section "Liste des entreprises abonnées" sur la page Entreprises Abonnées */
+.liste-entreprises-page {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    justify-items: center; /* Centrer les entreprises dans chaque cellule de la grille */
+}
+
+.entreprise-detail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.entreprise-detail img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.8em;
+}
+
+.entreprise-detail h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.entreprise-detail p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.95em;
+    margin-bottom: 1em;
+}
+
+.entreprise-detail .button-light {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    background-color: #eee;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.entreprise-detail .button-light:hover {
+    background-color: #ddd;
+    color: #0056b3;
+}
+
+/* Responsive Design pour la liste des entreprises abonnées (écrans plus petits) */
+@media (max-width: 600px) {
+    .liste-entreprises-page {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+}
+/* style.css (suite) */
+
+/* Styles pour la section "Formulaire de contact" */
+.contact-form {
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.contact-form h2 {
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    color: #555;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 22px); /* Ajustement pour le padding et la bordure */
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permettre le redimensionnement vertical de la textarea */
+}
+
+.contact-form .button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: none; /* Supprimer la bordure par défaut des boutons */
+    cursor: pointer; /* Changer le curseur au survol pour indiquer que c'est cliquable */
+}
+
+.contact-form .button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour la section "Informations de contact" */
+.contact-info {
+    padding: 2em;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.contact-info p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0.8em;
+    font-size: 1em;
+}
+
+/* Responsive Design pour le formulaire (écrans plus petits) */
+@media (max-width: 600px) {
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: calc(100% - 12px); /* Ajustement plus petit pour le padding sur mobile */
+    }
+}
