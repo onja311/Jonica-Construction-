@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de l'Équipe - Administration Jonica Construction</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="logo">
+                <a href="/admin/dashboard">Jonica Construction (Admin)</a>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="/admin/dashboard">Tableau de Bord</a></li>
+                    <li class="active"><a href="/admin/contenu">Contenu</a></li>
+                    <li><a href="/admin/abonnements">Abonnements</a></li>
+                    <li><a href="/admin/utilisateurs">Utilisateurs</a></li>
+                    <li><a href="/admin/messages">Messages</a></li>
+                    <li><a href="/admin/finance">Finance</a></li>
+                    <li><a href="/admin/logout">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="admin-main">
+            <h1>Gestion de l'Équipe</h1>
+
+            <section class="content-form">
+                <h2>Ajouter un Nouveau Membre</h2>
+                <div class="form-group">
+                    <label for="nouveau_membre_nom">Nom :</label>
+                    <input type="text" id="nouveau_membre_nom" name="nouveau_membre_nom">
+                </div>
+                <div class="form-group">
+                    <label for="nouveau_membre_role">Rôle :</label>
+                    <input type="text" id="nouveau_membre_role" name="nouveau_membre_role">
+                </div>
+                <div class="form-group">
+                    <label for="nouveau_membre_photo">Photo (format carré recommandé) :</label>
+                    <input type="file" id="nouveau_membre_photo" name="nouveau_membre_photo">
+                </div>
+                <div class="form-group">
+                    <label for="nouveau_membre_bio">Biographie :</label>
+                    <textarea id="nouveau_membre_bio" name="nouveau_membre_bio" rows="4"></textarea>
+                </div>
+                <button type="button" class="button">Ajouter le membre</button>
+            </section>
+
+            <section class="content-list">
+                <h2>Liste des Membres de l'Équipe</h2>
+                <ul class="list-items">
+                    <li>
+                        <div class="list-item">
+                            <img src="../../images/membre-1-mini.jpg" alt="Nom Membre 1" class="member-photo">
+                            <div class="member-info">
+                                <h3>Nom Membre 1</h3>
+                                <p class="role">Rôle</p>
+                            </div>
+                            <div class="actions">
+                                <a href="/admin/contenu/equipe/modifier/1" class="button-light">Modifier</a>
+                                <button type="button" class="button-danger">Supprimer</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item">
+                            <img src="../../images/membre-2-mini.jpg" alt="Nom Membre 2" class="member-photo">
+                            <div class="member-info">
+                                <h3>Nom Membre 2</h3>
+                                <p class="role">Rôle</p>
+                            </div>
+                            <div class="actions">
+                                <a href="/admin/contenu/equipe/modifier/2" class="button-light">Modifier</a>
+                                <button type="button" class="button-danger">Supprimer</button>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+            </section>
+        </main>
+
+        <footer class="admin-footer">
+            <p>&copy; 2025 Jonica Construction. Administration.</p>
+        </footer>
+    </div>
+</body>
+</html>
