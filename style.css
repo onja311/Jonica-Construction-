@@ -98,3 +98,156 @@ footer {
         position: static; /* Rendre le pied de page statique sur les petits écrans (pour l'instant) */
     }
 }
+/* style.css (suite) */
+
+/* Styles pour la section "Nos Entreprises Abonnées" */
+.entreprises-abonnees {
+    padding: 2em;
+    background-color: #fff;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.entreprises-abonnees h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.liste-entreprises {
+    display: flex; /* Utiliser Flexbox pour la disposition horizontale des entreprises */
+    flex-wrap: wrap; /* Passer à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centrer les entreprises horizontalement */
+    gap: 1em; /* Espacement entre les entreprises */
+    margin-bottom: 1.5em;
+}
+
+.entreprise {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    width: calc(33% - 2em); /* Pour afficher 3 entreprises par ligne (sur écrans moyens et grands) */
+    min-width: 150px; /* Largeur minimale pour éviter le rétrécissement excessif */
+}
+
+.entreprise img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+}
+
+.entreprise h3 {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.entreprise p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 0.8em;
+}
+
+.button-light {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.button-light:hover {
+    background-color: #ddd;
+}
+
+.voir-plus {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.voir-plus:hover {
+    color: #0056b3;
+}
+
+/* Styles pour la section "Nos Projets Phares" */
+.projets-phares {
+    padding: 2em;
+    background-color: #f9f9f9;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.projets-phares h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.liste-projets {
+    display: flex; /* Utiliser Flexbox pour la disposition horizontale des projets */
+    flex-wrap: wrap; /* Passer à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centrer les projets horizontalement */
+    gap: 1em; /* Espacement entre les projets */
+    margin-bottom: 1.5em;
+}
+
+.projet {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    width: calc(45% - 2em); /* Pour afficher 2 projets par ligne (sur écrans moyens et grands) */
+    min-width: 200px; /* Largeur minimale pour éviter le rétrécissement excessif */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projet img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+}
+
+.projet h3 {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.projet p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 0.8em;
+}
+
+/* Responsive Design pour les sections (écrans plus petits) */
+@media (max-width: 768px) {
+    .liste-entreprises .entreprise {
+        width: calc(50% - 1em); /* 2 entreprises par ligne sur tablette */
+    }
+
+    .liste-projets .projet {
+        width: calc(90% - 1em); /* 1 projet par ligne sur tablette */
+    }
+}
+
+@media (max-width: 480px) {
+    .liste-entreprises .entreprise {
+        width: calc(100% - 1em); /* 1 entreprise par ligne sur smartphone */
+    }
+
+    .liste-projets .projet {
+        width: calc(100% - 1em); /* 1 projet par ligne sur smartphone */
+    }
+}
