@@ -461,3 +461,57 @@ footer {
         grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
     }
 }
+/* style.css (suite) */
+
+/* Styles pour la section "Liste des membres" sur la page Équipe */
+.liste-membres {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    justify-items: center; /* Centrer les membres dans chaque cellule de la grille */
+}
+
+.membre-detail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.membre-detail img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.8em;
+    border: 2px solid #eee;
+}
+
+.membre-detail h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.membre-detail .role {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+.membre-detail p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.95em;
+}
+
+/* Responsive Design pour la liste des membres (écrans plus petits) */
+@media (max-width: 600px) {
+    .liste-membres {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+}
