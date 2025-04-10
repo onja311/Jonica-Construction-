@@ -83,3 +83,93 @@
         width: calc(100% - 12px); /* Ajustement plus petit pour le padding sur mobile */
     }
 }
+/* admin/admin.css (suite) */
+
+/* Styles spécifiques à la page de gestion des services */
+.content-list h2 {
+    color: #333;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+}
+
+.list-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-items li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+    color: #333;
+}
+
+.list-item p {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.list-item .actions {
+    display: flex;
+    gap: 0.5em;
+}
+
+.button-light {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #f8f9fa;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-light:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button-danger {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-danger:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design pour la liste des services (écrans plus petits) */
+@media (max-width: 600px) {
+    .list-items li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-item .actions {
+        margin-top: 1em;
+    }
+}
