@@ -1,90 +1,100 @@
+/* style.css */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Gris */
-    color: #333;
+    font-family: sans-serif; /* Police de caractères par défaut */
+    margin: 0; /* Supprimer les marges par défaut du body */
+    padding: 0; /* Supprimer les paddings par défaut du body */
+    background-color: #f4f4f4; /* Couleur de fond de page claire */
+    color: #333; /* Couleur de texte principale foncée */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
 }
 
-.navbar {
-    background-color: #007bff; /* Manga */
+header {
+    background-color: #333; /* Couleur de fond de l'en-tête foncée */
+    color: #fff; /* Couleur de texte de l'en-tête claire */
+    padding: 1em 2em; /* Padding vertical et horizontal pour l'en-tête */
+    display: flex; /* Utiliser Flexbox pour aligner le logo et la navigation */
+    justify-content: space-between; /* Espacer le logo et la navigation */
+    align-items: center; /* Les aligner verticalement au centre */
 }
 
-.navbar-brand, .navbar-nav .nav-link {
-    color: white;
+.logo a {
+    color: #fff; /* Couleur du texte du logo claire */
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    font-size: 1.5em; /* Taille de police plus grande pour le logo */
+    font-weight: bold; /* Texte du logo en gras */
 }
 
-.navbar-brand img {
-    margin-right: 10px;
+nav ul {
+    list-style: none; /* Supprimer les puces de la liste de navigation */
+    padding: 0; /* Supprimer le padding par défaut de la liste */
+    margin: 0; /* Supprimer la marge par défaut de la liste */
+    display: flex; /* Utiliser Flexbox pour aligner les éléments de la navigation horizontalement */
 }
 
-.jumbotron {
-    background-color: #007bff; /* Manga */
-    color: white;
-    padding: 100px 0;
+nav ul li {
+    margin-left: 1em; /* Ajouter un espace entre les éléments de la navigation */
 }
 
-.container {
-    padding: 20px;
+nav ul li:first-child {
+    margin-left: 0; /* Supprimer la marge à gauche du premier élément */
 }
 
-.form-group {
-    margin-bottom: 15px;
+nav ul li a {
+    color: #fff; /* Couleur des liens de navigation claire */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    padding: 0.5em 1em; /* Ajouter un peu de padding aux liens pour faciliter le clic */
+    border-radius: 5px; /* Ajouter des bords arrondis aux liens */
+    transition: background-color 0.3s ease; /* Ajouter une transition douce pour l'effet de survol */
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+nav ul li a:hover {
+    background-color: #555; /* Couleur de fond plus claire au survol des liens */
 }
 
-.form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.btn-primary {
-    background-color: #007bff; /* Manga */
-    border-color: #007bff;
-    padding: 10px 20px;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+main {
+    padding: 2em; /* Ajouter du padding autour du contenu principal */
 }
 
 footer {
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-.progress {
-    margin-top: 10px;
-}
-.loading-dots {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-    color: #007bff;
+    background-color: #333; /* Couleur de fond du pied de page foncée */
+    color: #fff; /* Couleur de texte du pied de page claire */
+    text-align: center; /* Centrer le texte du pied de page */
+    padding: 1em; /* Ajouter du padding au pied de page */
+    position: fixed; /* Fixer le pied de page en bas de l'écran */
+    bottom: 0; /* Le positionner en bas */
+    width: 100%; /* Occuper toute la largeur */
 }
 
-.loading-dots span {
-    animation: loading-dots-animation 1.5s infinite;
-}
+/* Responsive Design (pour les écrans plus petits) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empiler le logo et la navigation sur les petits écrans */
+        align-items: flex-start; /* Alignement à gauche sur les petits écrans */
+    }
 
-.loading-dots span:nth-child(2) {
-    animation-delay: 0.5s;
-}
+    nav ul {
+        flex-direction: column; /* Empiler les liens de navigation verticalement */
+        width: 100%; /* Occuper toute la largeur */
+        margin-top: 1em; /* Ajouter un peu d'espace en haut de la navigation */
+    }
 
-.loading-dots span:nth-child(3) {
-    animation-delay: 1s;
-}
+    nav ul li {
+        margin-left: 0; /* Supprimer la marge à gauche des éléments de navigation empilés */
+        margin-top: 0.5em; /* Ajouter un peu d'espace entre les liens empilés */
+        width: 100%; /* Occuper toute la largeur des liens */
+    }
 
-@keyframes loading-dots-animation {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+    nav ul li a {
+        display: block; /* Rendre les liens des blocs pour qu'ils occupent toute la largeur */
+        text-align: center; /* Centrer le texte des liens sur les petits écrans */
+    }
+
+    main {
+        padding: 1em; /* Réduire le padding du contenu principal sur les petits écrans */
+    }
+
+    footer {
+        position: static; /* Rendre le pied de page statique sur les petits écrans (pour l'instant) */
+    }
 }
