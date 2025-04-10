@@ -1,52 +1,102 @@
 <!DOCTYPE html>
-<html lang="mg">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonica Construction</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="loading-dots" class="loading-dots">
-        <span>.</span>
-        <span>.</span>
-        <span>.</span>
-    </div>
-    <div id="content" style="display: none;">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="index.html">Jonica Construction</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Fandraisana</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Momba anay</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Serivisy</a></li>
-                    <li class="nav-item"><a class="nav-link" href="jobs.html">Asa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Fidirana</a></li>
-                </ul>
-            </div>
+    <header>
+        <div class="logo">
+            <a href="/">Jonica Construction</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/services">Nos Services</a></li>
+                <li><a href="/equipe">Notre Équipe</a></li>
+                <li><a href="/projets">Projets</a></li>
+                <li><a href="/entreprises-abonnees">Entreprises Abonnées</a></li>
+                <li><a href="/contact">Contactez-nous</a></li>
+            </ul>
         </nav>
-        <header class="jumbotron text-center">
-            <h1>Tongasoa eto amin'ny Jonica Construction</h1>
-            <p>Manome serivisy fanorenana avo lenta izahay.</p>
-            <a href="#" class="btn btn-primary">Hifandraisa aminay</a>
-        </header>
-        <main class="container">
-            <section class="row">
-                <div class="col-md-4"><h2>Serivisy 1</h2><p>Fanazavana momba ny serivisy 1.</p></div>
-                <div class="col-md-4"><h2>Serivisy 2</h2><p>Fanazavana momba ny serivisy 2.</p></div>
-                <div class="col-md-4"><h2>Serivisy 3</h2><p>Fanazavana momba ny serivisy 3.</p></div>
-            </section>
-        </main>
-        <footer class="text-center"><p>Copyright © 2023 Jonica Construction</p></footer>
-    </div>
-    <script>
-        window.onload = function() {
-            setTimeout(function() {
-                document.getElementById('loading-dots').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            }, 2000); // 2 segondra
-        };
-    </script>
+    </header>
+
+    <main>
+        <section class="presentation">
+            <h1>Bienvenue chez Jonica Construction</h1>
+            <p>Votre partenaire de confiance pour tous vos projets de construction.</p>
+            <a href="/contact" class="button">Contactez-nous pour un devis</a>
+        </section>
+
+        <section class="entreprises-abonnees">
+            <h2>Nos Entreprises Abonnées</h2>
+            <div class="liste-entreprises">
+                <div class="entreprise">
+                    <img src="images/logo-entreprise-1.png" alt="Logo Entreprise 1">
+                    <h3>Nom Entreprise 1</h3>
+                    <p>Brève description de l'entreprise 1.</p>
+                    <a href="/entreprise/entreprise-1" class="button-light">Voir leur page</a>
+                </div>
+                <div class="entreprise">
+                    <img src="images/logo-entreprise-2.png" alt="Logo Entreprise 2">
+                    <h3>Nom Entreprise 2</h3>
+                    <p>Brève description de l'entreprise 2.</p>
+                    <a href="/entreprise/entreprise-2" class="button-light">Voir leur page</a>
+                </div>
+                </div>
+            <a href="/entreprises-abonnees" class="voir-plus">Voir toutes les entreprises abonnées</a>
+        </section>
+
+        <section class="projets-phares">
+            <h2>Nos Projets Phares</h2>
+            <div class="liste-projets">
+                <div class="projet">
+                    <img src="images/projet-1.jpg" alt="Projet 1">
+                    <h3>Nom du Projet 1</h3>
+                    <p>Courte description du projet 1.</p>
+                    <a href="/projet/projet-1" class="button-light">Voir le projet</a>
+                </div>
+                <div class="projet">
+                    <img src="images/projet-2.jpg" alt="Projet 2">
+                    <h3>Nom du Projet 2</h3>
+                    <p>Courte description du projet 2.</p>
+                    <a href="/projet/projet-2" class="button-light">Voir le projet</a>
+                </div>
+                </div>
+            <a href="/projets" class="voir-plus">Voir tous nos projets</a>
+        </section>
+
+        <section class="notre-equipe-accueil">
+            <h2>Notre Équipe</h2>
+            <p>Une équipe de professionnels qualifiés à votre service.</p>
+            <div class="membres-equipe">
+                <div class="membre">
+                    <img src="images/membre-1.jpg" alt="Membre 1">
+                    <h3>Nom Membre 1</h3>
+                    <p>Rôle</p>
+                </div>
+                <div class="membre">
+                    <img src="images/membre-2.jpg" alt="Membre 2">
+                    <h3>Nom Membre 2</h3>
+                    <p>Rôle</p>
+                </div>
+                </div>
+            <a href="/equipe" class="voir-plus">En savoir plus sur notre équipe</a>
+        </section>
+
+        <section class="appel-action">
+            <h2>Prêt à démarrer votre projet ?</h2>
+            <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins.</p>
+            <a href="/contact" class="button">Demander un devis</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jonica Construction. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
