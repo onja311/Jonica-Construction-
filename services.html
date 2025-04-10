@@ -1,35 +1,52 @@
 <!DOCTYPE html>
-<html lang="mg">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serivisy - Jonica Construction</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Nos Services - Jonica Construction</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">
-            <img src="logo.png" alt="Jonica Construction Logo" width="50" height="50" class="d-inline-block align-top">
-            Jonica Construction
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Fandraisana</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">Momba anay</a></li>
-                <li class="nav-item active"><a class="nav-link" href="services.html">Serivisy</a></li>
-                <li class="nav-item"><a class="nav-link" href="jobs.html">Asa</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Fidirana</a></li>
-            </ul>
+    <header>
+        <div class="logo">
+            <a href="/">Jonica Construction</a>
         </div>
-    </nav>
-    <main class="container">
-        <h1>Serivisy</h1>
-        <p>Lisitry ny serivisy atolotra...</p>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/services">Nos Services</a></li>
+                <li><a href="/equipe">Notre Équipe</a></li>
+                <li><a href="/projets">Projets</a></li>
+                <li><a href="/entreprises-abonnees">Entreprises Abonnées</a></li>
+                <li><a href="/contact">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Nos Services</h1>
+        </section>
+
+        <section class="liste-services">
+            <div class="service">
+                <h3>Construction Résidentielle</h3>
+                <p>Description détaillée de nos services de construction résidentielle...</p>
+                <img src="images/service-residentiel.jpg" alt="Construction Résidentielle">
+            </div>
+            <div class="service">
+                <h3>Construction Commerciale</h3>
+                <p>Description détaillée de nos services de construction commerciale...</p>
+                <img src="images/service-commercial.jpg" alt="Construction Commerciale">
+            </div>
+            </div>
+        </section>
     </main>
-    <footer class="text-center"><p>Copyright © 2023 Jonica Construction</p></footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Jonica Construction. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
