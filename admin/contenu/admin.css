@@ -1,0 +1,85 @@
+/* admin/admin.css (suite) */
+
+/* Styles pour le formulaire de gestion de contenu */
+.content-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.form-section {
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.form-section:last-child {
+    border-bottom: none;
+}
+
+.form-section h2 {
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group input[type="checkbox"] {
+    width: calc(100% - 22px); /* Ajustement pour padding et bordure */
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Inclure padding et bordure dans la largeur */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto; /* Ajuster la largeur pour la checkbox */
+    margin-right: 0.5em;
+}
+
+.content-form .button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #28a745; /* Couleur verte pour enregistrer */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.content-form .button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design pour le formulaire (écrans plus petits) */
+@media (max-width: 600px) {
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: calc(100% - 12px); /* Ajustement plus petit pour le padding sur mobile */
+    }
+}
