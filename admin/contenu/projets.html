@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Projets - Administration Jonica Construction</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="logo">
+                <a href="/admin/dashboard">Jonica Construction (Admin)</a>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="/admin/dashboard">Tableau de Bord</a></li>
+                    <li class="active"><a href="/admin/contenu">Contenu</a></li>
+                    <li><a href="/admin/abonnements">Abonnements</a></li>
+                    <li><a href="/admin/utilisateurs">Utilisateurs</a></li>
+                    <li><a href="/admin/messages">Messages</a></li>
+                    <li><a href="/admin/finance">Finance</a></li>
+                    <li><a href="/admin/logout">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="admin-main">
+            <h1>Gestion des Projets</h1>
+
+            <section class="content-form">
+                <h2>Ajouter un Nouveau Projet</h2>
+                <div class="form-group">
+                    <label for="nouveau_projet_titre">Titre du projet :</label>
+                    <input type="text" id="nouveau_projet_titre" name="nouveau_projet_titre">
+                </div>
+                <div class="form-group">
+                    <label for="nouveau_projet_localisation">Localisation :</label>
+                    <input type="text" id="nouveau_projet_localisation" name="nouveau_projet_localisation">
+                </div>
+                <div class="form-group">
+                    <label for="nouveau_projet_image">Image principale du projet :</label>
+                    <input type="file" id="nouveau_projet_image" name="nouveau_projet_image">
+                </div>
+                <div class="form-group">
+                    <label for="nouveau_projet_description">Description du projet :</label>
+                    <textarea id="nouveau_projet_description" name="nouveau_projet_description" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="nouveau_projet_phare">Mettre en avant sur l'accueil :</label>
+                    <input type="checkbox" id="nouveau_projet_phare" name="nouveau_projet_phare">
+                </div>
+                <button type="button" class="button">Ajouter le projet</button>
+            </section>
+
+            <section class="content-list">
+                <h2>Liste des Projets Existants</h2>
+                <ul class="list-items">
+                    <li>
+                        <div class="list-item project-item">
+                            <img src="../../images/projet-1-mini.jpg" alt="Nom Projet 1" class="project-image">
+                            <div class="project-info">
+                                <h3>Nom Projet 1</h3>
+                                <p class="localisation">Localisation</p>
+                            </div>
+                            <div class="actions">
+                                <a href="/admin/contenu/projets/modifier/1" class="button-light">Modifier</a>
+                                <button type="button" class="button-danger">Supprimer</button>
+                            </div>
+                            <div class="featured-status">
+                                <span class="featured">Phare</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item project-item">
+                            <img src="../../images/projet-2-mini.jpg" alt="Nom Projet 2" class="project-image">
+                            <div class="project-info">
+                                <h3>Nom Projet 2</h3>
+                                <p class="localisation">Localisation</p>
+                            </div>
+                            <div class="actions">
+                                <a href="/admin/contenu/projets/modifier/2" class="button-light">Modifier</a>
+                                <button type="button" class="button-danger">Supprimer</button>
+                            </div>
+                            <div class="featured-status">
+                                <span class="not-featured">Non phare</span>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+            </section>
+        </main>
+
+        <footer class="admin-footer">
+            <p>&copy; 2025 Jonica Construction. Administration.</p>
+        </footer>
+    </div>
+</body>
+</html>
