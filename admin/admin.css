@@ -78,3 +78,155 @@ body {
 .forgot-password a:hover {
     text-decoration: underline;
 }
+/* admin/admin.css (suite) */
+
+/* Styles pour l'en-tête de l'administration */
+.admin-header {
+    background-color: #2c3e50; /* Couleur de fond foncée */
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Styles pour la navigation de l'administration */
+.admin-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.admin-nav ul li {
+    margin-left: 1em;
+}
+
+.admin-nav ul li:first-child {
+    margin-left: 0;
+}
+
+.admin-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-nav ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Styles pour le conteneur principal de l'administration */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.admin-main {
+    flex-grow: 1;
+    padding: 2em;
+}
+
+.admin-main h1 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Styles pour la section d'aperçu du tableau de bord */
+.dashboard-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.overview-card {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.overview-card h3 {
+    color: #555;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+.overview-card .data {
+    color: #333;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Styles pour la section d'activité récente */
+.dashboard-recent-activity {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-recent-activity h2 {
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+}
+
+.dashboard-recent-activity ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-recent-activity ul li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.dashboard-recent-activity ul li:last-child {
+    border-bottom: none;
+}
+
+/* Styles pour le pied de page de l'administration */
+.admin-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive Design pour le tableau de bord (écrans plus petits) */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column; /* Empiler l'en-tête et le contenu */
+    }
+
+    .admin-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1em;
+    }
+
+    .admin-nav ul li {
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
+
+    .admin-nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
